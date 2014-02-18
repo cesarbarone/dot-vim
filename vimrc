@@ -20,6 +20,10 @@ set number " mostrar o numero da linha
 set nowrap " nao quebra linhas maiores que a área de visualização
 set showmode " if in Insert, Replace or Visual mode put a message on the last line
 set showcmd " mostra o comando sendo digitado, por exemplo 3p
+set cursorline "destaca a linha corrent
+set cursorcolumn "destaca a coluna corrente
+"destaca a linha com bold e outras frescuras
+hi CursorLine term=bold cterm=bold guibg=Grey40 
 """ beautiful status line with:
 """ left: fullpath, modified flag (+modified,-modfiable is off), readonly flag,
 """ right: line number, column number, percentage as in ruler, number of lines
@@ -64,8 +68,12 @@ Bundle 'matthewsimo/angular-vim-snippets'
 Bundle 'ervandew/supertab'
 "" Close brackets, parens, quots
 Bundle 'Raimondi/delimitMate'
+"" tabline for frindly tabs
+Bundle 'mkitt/tabline.vim'
 "" syntax check
 ""Bundle 'tomtom/checksyntax_vim'
+
+""Bundle 'Lokaltog/powerline'
 
 " End of My Bundles
 
@@ -77,3 +85,8 @@ syntax enable
 set background=dark
 let g:solarized_termcolors=256
 colorscheme solarized
+
+""for tabline
+hi TabLine      ctermfg=Black  ctermbg=Green     cterm=NONE
+hi TabLineFill  ctermfg=Black  ctermbg=Green     cterm=NONE
+hi TabLineSel   ctermfg=White  ctermbg=DarkBlue  cterm=NONE
