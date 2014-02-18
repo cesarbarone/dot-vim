@@ -1,0 +1,25 @@
+snippet ngaceform
+	<form class="form-horizontal" role="form" ng-submit="create()">
+	  <div class="form-group"> 
+	    <label class="col-sm-3 control-label no-padding-right" translate="${1}" for="${3}"> </label>
+		<div class="col-sm-9">
+		  <input type="text" id="${2}" placeholder="${4}" class="col-xs-10 col-sm-5"> 
+		</div>
+	  </div>
+	  <div class="space-4"></div>
+	  <div class="clearfix form-actions">
+	  	<div class="col-md-offset-3 col-md-9">
+		  <button class="btn btn-info" type="button">
+		    <i class="icon-ok bigger-110"></i>
+			<span translate="${5}"></span>
+		  </button>
+		</div>
+	  </div>
+	</form>
+snippet ngacetextfield
+	<div class="form-group"> 
+	  <label class="col-sm-3 control-label no-padding-right" for="${1}"> Text Field </label>
+	  <div class="col-sm-9">
+	    <input type="text" id="${2}" placeholder="${3}" class="col-xs-10 col-sm-5"> 
+	  </div>
+	</div>

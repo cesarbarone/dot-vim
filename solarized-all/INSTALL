@@ -1,0 +1,11 @@
+m:v dircolors.ansi-dark .dircolors
+eval `dircolors ~/.dircolors`
+
+or 
+
+mv dircolors.ansi-light .dircolors
+eval `dircolors ~/.dircolors`
+
+and for guake
+
+ use ./set_light.sh and ./set_dark.sh to set the color scheme
