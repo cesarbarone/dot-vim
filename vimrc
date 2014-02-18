@@ -83,8 +83,8 @@ let g:solarized_termcolors=256
 colorscheme solarized
 
 ""para mudar cor das abas
-hi TabLine      ctermfg=Black  ctermbg=Green     cterm=NONE
-hi TabLineFill  ctermfg=Black  ctermbg=Green     cterm=NONE
+hi TabLine      ctermfg=White  ctermbg=Green     cterm=NONE
+hi TabLineFill  ctermfg=White  ctermbg=Green     cterm=NONE
 hi TabLineSel   ctermfg=White  ctermbg=DarkBlue  cterm=NONE
 
 "" tem que ficar aqui para rodar depois que o schema de cores rodar
