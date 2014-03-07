@@ -66,8 +66,10 @@ Bundle 'ervandew/supertab'
 Bundle 'Raimondi/delimitMate'
 "" tabline for frindly tabs
 Bundle 'mkitt/tabline.vim'
+"" Syntax highlight for javascript libs (Jquery, Ember, Angular)
+Bundle 'othree/javascript-libraries-syntax.vim'
 "" syntax check
-""Bundle 'tomtom/checksyntax_vim'
+"Bundle 'tomtom/checksyntax_vim'
 
 ""Bundle 'Lokaltog/powerline'
 
@@ -86,6 +88,9 @@ colorscheme solarized
 hi TabLine      ctermfg=White  ctermbg=Green     cterm=NONE
 hi TabLineFill  ctermfg=White  ctermbg=Green     cterm=NONE
 hi TabLineSel   ctermfg=White  ctermbg=DarkBlue  cterm=NONE
+
+""configurações do plugin javascript-libraries-syntax.vim
+let g:used_javascript_libs = 'angularjs,angularui,jquery'
 
 "" tem que ficar aqui para rodar depois que o schema de cores rodar
 set cursorline "destaca a linha corrent
