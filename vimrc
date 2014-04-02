@@ -80,7 +80,7 @@ filetype plugin indent on     " required!
 ""solarized colors
 se t_Co=256
 syntax enable
-set background=dark
+set background=light
 let g:solarized_termcolors=256
 colorscheme solarized
 
