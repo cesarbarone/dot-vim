@@ -2,8 +2,8 @@
 ""Vundle
 set nocompatible               " be iMproved
 filetype off                   " required!
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 ""tagbar
 ""nmap <F8> :TagbarToggle<CR>
@@ -37,44 +37,44 @@ set incsearch " busca incremental
 """ Disable directories for angular projects
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/bower_components/*,*/dist/*,*/app/images/*,*/node_modules/*,*/fonts/*,*/lib/*
 
-" My Bundles here:
+" My Plugins here:
 " vundle
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/vundle'
 "" tagbar
-Bundle 'majutsushi/tagbar'
+Plugin 'majutsushi/tagbar'
 ""solarized
-Bundle 'altercation/vim-colors-solarized'
+Plugin 'altercation/vim-colors-solarized'
 ""snipmates
-Bundle "MarcWeber/vim-addon-mw-utils"
-Bundle "tomtom/tlib_vim"
-Bundle "garbas/vim-snipmate"
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
 ""community snippets
-Bundle "honza/vim-snippets"
+Plugin 'honza/vim-snippets'
 ""CtrlP
-Bundle "kien/ctrlp.vim"
+Plugin 'kien/ctrlp.vim'
 ""Tagbar
-"Bundle majutsushi/tagbar
+"Plugin majutsushi/tagbar
 ""EasyMotion
-Bundle "Lokaltog/vim-easymotion"
+Plugin 'Lokaltog/vim-easymotion'
 ""CofeeScript syntax highlight
-Bundle 'kchmck/vim-coffee-script'
+Plugin 'kchmck/vim-coffee-script'
 "" Angular Snippets
-Bundle 'matthewsimo/angular-vim-snippets'
+Plugin 'matthewsimo/angular-vim-snippets'
 "" Supertab complete
-Bundle 'ervandew/supertab'
+Plugin 'ervandew/supertab'
 "" Close brackets, parens, quots
-Bundle 'Raimondi/delimitMate'
+Plugin 'Raimondi/delimitMate'
 "" tabline for frindly tabs
-Bundle 'mkitt/tabline.vim'
+Plugin 'mkitt/tabline.vim'
 "" Syntax highlight for javascript libs (Jquery, Ember, Angular)
-Bundle 'othree/javascript-libraries-syntax.vim'
+Plugin 'othree/javascript-libraries-syntax.vim'
 "" syntax check
-"Bundle 'tomtom/checksyntax_vim'
+"Plugin 'tomtom/checksyntax_vim'
 
-""Bundle 'Lokaltog/powerline'
+""Plugin 'Lokaltog/powerline'
 
-" End of My Bundles
-
+" End of My Plugins
+call vundle#end()   
 filetype plugin indent on     " required!
 
 ""solarized colors
@@ -85,9 +85,9 @@ let g:solarized_termcolors=256
 colorscheme solarized
 
 ""para mudar cor das abas
-hi TabLine      ctermfg=White  ctermbg=Green     cterm=NONE
-hi TabLineFill  ctermfg=White  ctermbg=Green     cterm=NONE
-hi TabLineSel   ctermfg=White  ctermbg=DarkBlue  cterm=NONE
+hi TabLine      ctermfg=Darkblue ctermbg=White    cterm=NONE
+hi TabLineFill  ctermfg=Darkblue ctermbg=White    cterm=NONE
+hi TabLineSel   ctermfg=White    ctermbg=DarkBlue cterm=NONE
 
 ""configurações do plugin javascript-libraries-syntax.vim
 let g:used_javascript_libs = 'angularjs,angularui,jquery'
