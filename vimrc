@@ -14,6 +14,13 @@ nnoremap <S-Down> :tabnext<CR>
 nnoremap <S-t> :tabnew<CR>
 nnoremap <S-w> :tabclose<CR>
 
+"" RSpec.vim mappings
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
+map <Leader>a :call RunAllSpecs()<CR>
+""let g:rspec_command = "!bundle exec rspec --drb {spec}"
+
 
 ""general
 set number " mostrar o numero da linha
@@ -21,8 +28,8 @@ set nowrap " nao quebra linhas maiores que a área de visualização
 set showmode " if in Insert, Replace or Visual mode put a message on the last line
 set showcmd " mostra o comando sendo digitado, por exemplo 3p
 """ beautiful status line with:
-""" left: fullpath, modified flag (+modified,-modfiable is off), readonly flag,
-""" right: line number, column number, percentage as in ruler, number of lines
+""left: fullpath, modified flag (+modified,-modfiable is off), readonly flag,
+"right: line number, column number, percentage as in ruler, number of lines
 set statusline=%(\ %F\ %m\ %)\ %=\ %(\ [%l,%c]\ %P\ of\ %L\ lines\ \[%n\]\ %)
 set laststatus=2 " statusline na segunda linha
 set backspace=indent,eol,start " faz com que o backspace apague endentação, caracteres de fim e início delinha
@@ -35,7 +42,8 @@ set incsearch " busca incremental
 
 "" CtrlP Configurations
 """ Disable directories for angular projects
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/bower_components/*,*/dist/*,*/app/images/*,*/node_modules/*,*/fonts/*,*/lib/*
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/bower_components/*,*/dist/*,*/app/images/*,*/node_modules/*,*/fonts/*
+
 
 " My Plugins here:
 " vundle
@@ -59,7 +67,7 @@ Plugin 'Lokaltog/vim-easymotion'
 ""CofeeScript syntax highlight
 Plugin 'kchmck/vim-coffee-script'
 "" Angular Snippets
-Plugin 'matthewsimo/angular-vim-snippets'
+"Plugin 'matthewsimo/angular-vim-snippets'
 "" Supertab complete
 Plugin 'ervandew/supertab'
 "" Close brackets, parens, quots
@@ -68,10 +76,14 @@ Plugin 'Raimondi/delimitMate'
 Plugin 'mkitt/tabline.vim'
 "" Syntax highlight for javascript libs (Jquery, Ember, Angular)
 Plugin 'othree/javascript-libraries-syntax.vim'
+"" Rspec vim
+Plugin 'thoughtbot/vim-rspec'
 "" syntax check
 "Plugin 'tomtom/checksyntax_vim'
-
+"Javascript enhanced syntax highligth
+Plugin 'jelera/vim-javascript-syntax'
 ""Plugin 'Lokaltog/powerline'
+Plugin 'tpope/vim-surround'
 
 " End of My Plugins
 call vundle#end()   
@@ -97,3 +109,4 @@ set cursorline "destaca a linha corrent
 set cursorcolumn "destaca a coluna corrente
 "destaca a linha com bold e outras frescuras
 hi CursorLine term=bold cterm=bold
+
