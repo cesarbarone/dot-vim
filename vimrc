@@ -42,7 +42,7 @@ set incsearch " busca incremental
 
 "" CtrlP Configurations
 """ Disable directories for angular projects
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/bower_components/*,*/dist/*,*/app/images/*,*/node_modules/*,*/fonts/*
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/bower_components/*,*/dist/*,*/app/images/*,*/node_modules/*,*/fonts/*,*/public/*
 
 
 " My Plugins here:

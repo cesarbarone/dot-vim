@@ -1,4 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/home/cesar/projetos/uploader/client/app/main'
-let g:netrw_dirhist_2='/home/cesar/trabalho/agente_virtual/client/src/vendor/angular-http-auth'
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/home/cesar/trabalho/4miners/projetos/minerador-frontend/.tmp/app'
+let g:netrw_dirhist_2='/home/cesar/trabalho/4miners/projetos/minerador-frontend/node_modules/gulp-protractor-qa'
+let g:netrw_dirhist_3='/home/cesar/trabalho/4miners/projetos/provider/lib/tasks'
+let g:netrw_dirhist_4='/home/cesar/trabalho/4miners/projetos/minerador-frontend/src'
+let g:netrw_dirhist_5='/home/cesar/trabalho/4miners/projetos/minerador-frontend/public/app/templates'
